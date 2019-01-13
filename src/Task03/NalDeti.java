@@ -118,7 +118,7 @@ public class NalDeti extends Nalogi {
 
             nalogi = super. getNalogPoczasow ( );
 
-        } else if ((formaOplaty).equals("сделка") ) {
+        } else if ((formaOplaty).equals("сдельная") ) {
 
             if (deti.equals("нет")){
 

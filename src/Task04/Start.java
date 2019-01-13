@@ -123,7 +123,7 @@ public class Start {
         p = person4;
 
         //String sum = Double.toString(summa);
-        System.out.print(p.getfistName() + "  " + Nalogi + "   " + Summa + "    " + SummaNalogi +"   "+ tugric);
+        System.out.print(p.getfistName() + "  " + Nalogi + "   " + Summa + "    " + SummaNalogi +" /  "+ tugric);
 
         System.out.println();
     }

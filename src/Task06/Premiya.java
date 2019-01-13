@@ -45,12 +45,6 @@ public class Premiya extends Zarplata {
 
     }
 
-
-
-
-
-
-
 }
 
 

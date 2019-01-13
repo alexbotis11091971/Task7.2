@@ -32,7 +32,23 @@ public class Ofshor extends Valuta {
         return super.getTugric(person5, nalogi, countChasy);
     }
 
+    public double getNalogi (Person5 person5){
+
+        Person4 person4;
+        person4=person5;
+        return super.getNalogi ( person4);
+    }
+
+    public double getSummaNalogi (Person5 person5){
+        Person4 person4;
+        person4=person5;
+        return  super.getSummaNalogi(person4) ;
+
+    }
+
+
 }
+
 
 
 

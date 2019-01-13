@@ -10,7 +10,7 @@ public class Start {
         Person [] person= new Person [countPerson];// таблица для объектов класса Person
         Zarplata zarplata = new Zarplata(200, 20, 5500);// объект класса Zarplata
 
-        //for (Person persona:person) {
+
         for (int i=0; i<countPerson;i++){ // заполняем таблицу объектами класса Person (персоналом)
             person [i] = readPerson();// // заполняем таблицу объектами класса Person (персоналом)
 

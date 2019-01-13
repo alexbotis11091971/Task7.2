@@ -19,15 +19,7 @@ public class Valuta extends NalDeti {
 
     }
 
-   // public double  getPoczasow ( int countChasy ){
-        // переопределяем  метод по часовой оплаты getPoczasow  из родительского класса class NalDeti extends Nalogi
-        // те рассматриваем случай когда дети есть
-
-
-       // double s= super.getPoczasow(  countChasy   ); //  возвращаем результат из родительского метода super.getPoczasow(  pochasov, chasy, nalogPoczasow, nalogDeti)
-       // s= s*0.5;// делим на половину
-       // return s;
-   // }
+   // p
 
     public double getKurs (){
 
@@ -36,8 +28,8 @@ public class Valuta extends NalDeti {
     }
 
     public double  getPoczasow (Person4 person4,Nalogi nalogi, int countChasy ) {
-        // переопределяем  метод по часовой оплаты getPoczasow  из родительского класса class NalDeti extends Nalogi
-        // те рассматриваем случай когда дети есть
+        // перегружаем  метод по часовой оплаты getPoczasow  из родительского класса class NalDeti extends Nalogi
+
         double s=0;
          if (person4.getDeti().equals("нет")) {
 
@@ -54,7 +46,7 @@ public class Valuta extends NalDeti {
     }
 
 
-    public double  getTugric (Person4 person4,Nalogi nalogi, int countChasy ){ // заводим метод для подсчета в тугриках в случае когда дети есть
+    public double  getTugric (Person4 person4,Nalogi nalogi, int countChasy ){ // заводим метод для подсчета в тугриках
 
         double s= getPoczasow( person4, nalogi, countChasy   );// берем результат нашего метода getPoczasow
 
@@ -64,26 +56,21 @@ public class Valuta extends NalDeti {
 
     }
 
-    public double  getTugric ( double summa){ // перегружаем метод для подсчета в тугриках когда детей нет
 
 
 
-        summa= (summa*kurs);// высчитываем сумму в тугриках по курсу
-        return summa ;// и возвращаем ее
-
-
-    }
     public double getSummaNalogi (Person4 person4){
        Person3 person3;
        person3=person4;
-       return  getSummaNalogi(person3) ;
+
+       return  super.getSummaNalogi ( person3);
 
     }
     public double getNalogi (Person4 person4){
 
         Person3 person3;
         person3=person4;
-        return getNalogi ( person3);
+        return super.getNalogi ( person3);
     }
 
 }

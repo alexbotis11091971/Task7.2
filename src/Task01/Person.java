@@ -20,9 +20,6 @@ public class Person {
         return firstName;
     }
 
-
-
-
     public String getFormaOplaty (){
 
         return formaOplaty;
